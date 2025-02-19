@@ -1,33 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
 import './App.css'
+import Comp from './Comp'
+import { useState } from 'react';
 
 
+const BackgroundChanger = () =>{
+  const [bgColor, setBgColor] = useState("#ffffff");
 
-function App() {
-  alert ("my name is sriram");
-  const name ={
-    name:"sriram",
-    age:19,
+  const changeColor = (color) => {
+    setBgColor(color);
   };
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center', // Centers horizontally
-    alignItems: 'center', // Centers vertically
-    height: '100vh', // Full viewport height
-};
-console.log("age="+name.age);
+
 
 return (
-  <div style={containerStyle}>
-    <div className='a'>
-      <p style={{ fontSize: '100px', color: 'WHITE' }}>
-          <h1>name:{name.name}</h1>
-      </p>
+    <div style={{ backgroundColor: bgColor, height: "100vh", padding: "20px" }}>
+      <h2>Change Background Color</h2>
+      <button onClick={() => changeColor("black")}>Black</button>
+      <button onClick={() => changeColor("white")}>white</button>
+      <button onClick={() => changeColor("blue")}>blue</button>
+      <button onClick={() => changeColor("green")}>Reset</button>
     </div>
-  </div>
-  )
+  );
 }
 
-export default App
+export default BackgroundChanger;

@@ -1,0 +1,8 @@
+#cont {
+
+    text-align: center;
+    justify-content: center;
+    border: 5px solid rgb(245, 19, 19);
+    margin: 150px;
+    border-radius: 20px;
+}

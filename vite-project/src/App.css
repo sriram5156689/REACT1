@@ -1,10 +1,14 @@
-
-body {
-  background-color: #f0f0f0;
-  background-image: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg');
+* {
   background-size: cover;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  background-color: rgb(245, 78, 12);
 }
-.a{
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 30px;
+#button{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  size: 5cm;
+  padding: 10px;
 }
